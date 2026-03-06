@@ -8,7 +8,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <script src="./js/script.js" defer></script>
-    <title>Поликровсистемс</title>
+    <title>Поликровсистемс — устройство и ремонт мягкой кровли в Салавате</title>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
 
             <div class="top-bar">
                 <div class="top-logo">
-                    <img src="./img/logo.png" alt="logo">
+                    <img src="./img/logo.png" alt="Поликровсистемс — устройство и ремонт мягкой кровли">
                     <span>Поликровсистемс</span>
                 </div>
 
@@ -77,17 +77,18 @@
         <div class="container">
             <div class="nav">
 
-                <div class="nav-logo">
-                    <img src="./img/logo.png" alt="logo">
+                <a href="./index.html" class="nav-logo">
+                    <img src="./img/logo.png" alt="Поликровсистемс — устройство и ремонт мягкой кровли">
                     <span>Поликровсистемс</span>
-                </div>
+                </a>
 
                 <ul class="nav-list ">
-                    <li class="nav-item active"><a href="index.html" class="nav-link">Главная</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Услуги</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Продукция</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Прайс</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                    <li aria-current="page" class="nav-item active"><a href="index.html" class="nav-link">Главная</a>
+                    </li>
+                    <li class="nav-item"><a href="./services.html" class="nav-link">Услуги</a></li>
+                    <li class="nav-item"><a href="./products.html" class="nav-link">Продукция</a></li>
+                    <li class="nav-item"><a href="./price.html" class="nav-link">Прайс</a></li>
+                    <li class="nav-item"><a href="./contacts.html" class="nav-link">Контакты</a></li>
                 </ul>
 
                 <div class="nav-contacts">
@@ -101,7 +102,7 @@
                     </div>
                 </div>
 
-                <button class="burger">
+                <button class="burger" aria-label="Открыть меню">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -121,8 +122,8 @@
                         и&nbsp;регионе
                     </p>
                     <div class="hero-btn">
-                        <a href="#" class="btn">Оставить заявку</a>
-                        <a href="#" class="hero-btn_price">Прайс</a>
+                        <a href="./contacts.html" class="btn btn--yellow">Оставить заявку</a>
+                        <a href="./price.html" class="btn btn--yellow-inverse">Прайс</a>
                     </div>
                 </div>
             </div>
@@ -131,7 +132,7 @@
         <section class="about">
             <div class="container">
                 <div class="about-wrapper">
-                    <div class="about-text">
+                    <div class="about-text stack">
                         <h2 class="section-title">О компании</h2>
                         <p class="section-text">ООО «Поликровсистемс» выполняет работы по устройству и ремонту мягкой
                             кровли зданий и
@@ -151,7 +152,7 @@
             <div class="container">
                 <h2 class="section-title">Преимущества</h2>
                 <ul class="advantages-list grid-auto">
-                    <li class="advantages-item card">
+                    <li class="advantages-item stack card">
                         <div class="advantages-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -171,7 +172,7 @@
                             скрытых затрат.</p>
                     </li>
 
-                    <li class="advantages-item card">
+                    <li class="advantages-item stack card">
                         <div class="advantages-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -194,7 +195,7 @@
                             конкретного проекта.</p>
                     </li>
 
-                    <li class="advantages-item card">
+                    <li class="advantages-item stack card">
                         <div class="advantages-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -206,12 +207,12 @@
                                 <path d="M15 19l2 2l4 -4" />
                             </svg>
                         </div>
-                        <h3 class="subtitle">Гарантия качества выполненных работ</h3>
+                        <h3 class="subtitle">Гарантия качества выполненных&nbsp;работ</h3>
                         <p class="section-text">Строго соблюдаем строительные нормы и&nbsp;предоставляем гарантию
                             на&nbsp;выполненные работы.</p>
                     </li>
 
-                    <li class="advantages-item card">
+                    <li class="advantages-item stack card">
                         <div class="advantages-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -239,79 +240,10 @@
             </div>
         </section>
 
-        <!-- <section class="developments">
-            <div class="container">
-                <div class="developments-wrapper">
-                    <div class="developments-img">
-                        <img src="./img/developments-img-1.jpg" alt="developments-img">
-                        <img src="./img/developments-img-2.jpg" alt="developments-img">
-                    </div>
-                    <div class="developments-text">
-                        <h2 class="section-title">Наши разработки</h2>
-                        <p class="section-text">В условиях современных требований к строительным материалам возникла
-                            необходимость создания уникального в своем роде продукта. Перед специалистами нашей компании
-                            была поставлена задача усовершенствовать формулу нашей базовой гидроизоляционной мастики
-                            «Вента» и «Защита». </p>
-                        <p class="section-text">В ходе работы по усовершенствованию материала, получился совершенно
-                            новый продукт, «Вента-787» и «Защита-788», отвечающий всем требованиям его применения в
-                            отраслях газовой и нефтяной промышленности.</p>
-                        <p class="section-text">Помимо всех тех свойств, которыми уже обладали мастика «Вента» и
-                            «Защита», была многократно усилена их стойкость к прямом воздействию следующих продуктов:
-                            сырая нефть, различные кислоты, продукты с высоким содержанием щёлочи, бензины, дизельного
-                            топлива, керосин, фосфатам и т.п. Кроме того, теперь мастика «Вента-787» и «Защита-788»
-                            застывает намного быстрее чем её предшественники, что позволяет значительно сократи время
-                            устройства материала.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="product">
-            <div class="container">
-                <h2 class="section-title">Продукция</h2>
-                <ul class="product-list">
-                    <li class="product-item">
-                        <div class="product-img">
-                            <img src="./img/product-img-1.jpg" alt="product-img">
-                        </div>
-                        <div class="product-content">
-                            <h3>Кровельная мастика «ВЕНТА»</h3>
-                            <p class="section-text">Кровельная мастика «ВЕНТА» представляет собой многокомпозиционный
-                                раствор синтетического каучука с добавлением модификаторов. Она предназначена для
-                                ремонта
-                                старых и устройства новых кровель, а также для защиты конструкций от атмосферного
-                                воздействия.
-                            </p>
-                            <button class="btn product-btn">Подробнее</button>
-                        </div>
-                    </li>
-
-                    <li class="product-item">
-                        <div class="product-img">
-                            <img src="./img/product-img-2.jpg" alt="product-img">
-                        </div>
-                        <div class="product-content">
-                            <h3>Светоотражающая мастика «Защита»</h3>
-                            <p class="section-text">Светоотражающая мастика «Защита» (производство освоено в 2003 г.)
-                                представляет собой готовый к применению многокомпозиционный раствор синтетического
-                                каучука с
-                                добавкой модификаторов и светоотражающего пигмента и предназначена для защиты готового
-                                кровельного ковра от воздействия солнечной радиации и снижения температурной нагрузки на
-                                кровлю зданий. А также для индикации износа готовой кровли в процессе эксплуатации.
-                            </p>
-                            <button class="btn product-btn">Подробнее</button>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
-        </section> -->
-
-
         <section class="developments">
             <div class="container">
                 <div class="developments-wrapper">
-                    <div class="developments-text">
+                    <div class="developments-text stack">
                         <h2 class="section-title">Наши разработки</h2>
                         <p class="section-text">Компания «Поликровсистемс» разрабатывает и производит собственные
                             гидроизоляционные материалы для устройства и ремонта мягкой кровли.
@@ -319,25 +251,25 @@
                             условиях повышенных нагрузок и агрессивных сред. </p>
                     </div>
                     <ul class="developments-list grid-auto">
-                        <li class="developments-item card">
+                        <li class="developments-item stack card">
                             <div class="developments-img">
-                                <img src="./img/developments-img-1.jpg" alt="developments-img">
+                                <img src="./img/developments-img-venta.jpg" alt="Кровельная мастика ВЕНТА">
                             </div>
                             <h3 class="subtitle">Кровельная мастика «ВЕНТА»</h3>
                             <p class="section-text">Базовая каучуковая мастика для устройства и ремонта мягких кровель.
                                 Обеспечивает прочное монолитное покрытие с высокой эластичностью и устойчивостью к
                                 атмосферным воздействиям.</p>
-                            <a href="#" class="btn-outline">Подробнее</a>
+                            <a href="./products.html" class="btn btn--outline">Подробнее</a>
                         </li>
 
-                        <li class="developments-item card">
+                        <li class="developments-item stack card">
                             <div class="developments-img">
-                                <img src="./img/developments-img-2.jpg" alt="developments-img">
+                                <img src="./img/developments-img-zashita.jpg" alt="Светоотражающая мастика ЗАЩИТА">
                             </div>
                             <h3 class="subtitle">Светоотражающая мастика «ЗАЩИТА»</h3>
                             <p class="section-text">Финишный защитный слой с добавлением светоотражающего пигмента.
                                 Снижает температурную нагрузку на кровлю и продлевает срок службы покрытия.</p>
-                            <a href="#" class="btn-outline">Подробнее</a>
+                            <a href="./products.html" class="btn btn--outline">Подробнее</a>
                         </li>
                     </ul>
                 </div>
@@ -350,9 +282,9 @@
                 <ul class="service-list">
                     <li class="service-item card">
                         <div class="service-img">
-                            <img src="./img/service-img.jpg" alt="service-img">
+                            <img src="./img/service-img.jpg" alt="Ремонт мягкой кровли">
                         </div>
-                        <div class="service-content">
+                        <div class="service-content stack">
                             <h3 class="subtitle">Устройство и ремонт мягкой кровли</h3>
                             <p class="section-text">Ремонт и устройство мягких кровель с применением каучуковой мастики
                                 «Вента» осуществляется последовательным нанесением трех слоев мастики и одного слоя
@@ -360,7 +292,7 @@
                                 устройстве новой кровли. Для защиты от солнечной радиации и индикации износа на
                                 кровельный ковер наносится один слой светоотражающей мастики «Защита».
                             </p>
-                            <a href="#" class="btn-outline">Подробнее</a>
+                            <a href="./services.html" class="btn btn--outline">Подробнее</a>
                         </div>
                     </li>
                 </ul>
@@ -387,14 +319,13 @@
                             </div>
                         </div>
 
-
-                        <div class="footer-social social-media">
+                        <div class="social-media">
                             <ul class="social-list">
-                                <li class="footer-social-item">
+                                <li class="social-item">
                                     <a href="https://www.instagram.com/portersystems?igsh=bGNhcDdsY2JuZmg%3D&utm_source=qr"
                                         target="_blank">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                                             stroke-linecap="round" stroke-linejoin="round"
                                             class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -406,10 +337,10 @@
                                     </a>
                                 </li>
 
-                                <li class="footer-social-item">
+                                <li class="social-item">
                                     <a href="https://wa.me/79174440506" target="_blank">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                                             stroke-linecap="round" stroke-linejoin="round"
                                             class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -420,10 +351,10 @@
                                     </a>
                                 </li>
 
-                                <li class="footer-social-item">
+                                <li class="social-item">
                                     <a href="mailto:pks0102@mail.ru" target="_blank">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                                             stroke-linecap="round" stroke-linejoin="round"
                                             class="icon icon-tabler icons-tabler-outline icon-tabler-at">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -440,16 +371,19 @@
                     <div class="footer-main">
 
                         <div class="footer-logo">
-                            <img src="./img/logo.png" alt="logo">
+                            <img src="./img/logo.png" alt="Поликровсистемс — устройство и ремонт мягкой кровли">
                             <span>Поликровсистемс</span>
                         </div>
 
                         <ul class="footer-nav-list ">
                             <li class="footer-nav-item"><a href="index.html" class="footer-nav-link">Главная</a></li>
-                            <li class="footer-nav-item"><a href="#" class="footer-nav-link">Услуги</a></li>
-                            <li class="footer-nav-item"><a href="#" class="footer-nav-link">Продукция</a></li>
-                            <li class="footer-nav-item"><a href="#" class="footer-nav-link">Прайс</a></li>
-                            <li class="footer-nav-item"><a href="#" class="footer-nav-link">Контакты</a></li>
+                            <li class="footer-nav-item"><a href="./services.html" class="footer-nav-link">Услуги</a>
+                            </li>
+                            <li class="footer-nav-item"><a href="./products.html" class="footer-nav-link">Продукция</a>
+                            </li>
+                            <li class="footer-nav-item"><a href="./price.html" class="footer-nav-link">Прайс</a></li>
+                            <li class="footer-nav-item"><a href="./contacts.html" class="footer-nav-link">Контакты</a>
+                            </li>
                         </ul>
 
                     </div>
@@ -463,6 +397,17 @@
             </div>
         </div>
     </footer>
+
+    <button class="scroll-top scroll-top--visible" aria-label="Наверх">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M12 5l0 14" />
+            <path d="M18 11l-6 -6" />
+            <path d="M6 11l6 -6" />
+        </svg>
+    </button>
 
 </body>
 
