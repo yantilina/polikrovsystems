@@ -77,10 +77,10 @@
         <div class="container">
             <div class="nav">
 
-                <div class="nav-logo">
+                <a href="./index.html" class="nav-logo">
                     <img src="./img/logo.png" alt="Поликровсистемс — устройство и ремонт мягкой кровли">
                     <span>Поликровсистемс</span>
-                </div>
+                </a>
 
                 <ul class="nav-list ">
                     <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
@@ -114,7 +114,116 @@
 
     <main class="main">
 
+        <section class="contacts-page">
+            <div class="container">
+                <div class="stack contacts-bg">
+                    <h1 class="section-title">Связаться с нами</h1>
+                    <div class="contacts-page__layout">
+                        <div class="contacts-page__form">
+                            <form class="stack" action="https://formspree.io/f/mjgaopbq" method="post"
+                                autocomplete="on">
+                                <input type="hidden" name="_subject" value="Сообщение с сайта PKS0102">
+                                <input type="text" name="_gotcha" class="honeypot">
+                                <div class="form-input">
+                                    <label class="form-label" for="name">Полное имя</label>
+                                    <input class="input" id="name" name="name" type="text" placeholder="Имя" required>
+                                </div>
+                                <div class="form-input">
+                                    <label class="form-label" for="email">Почта</label>
+                                    <input class="input" id="email" name="email" type="email" placeholder="Почта"
+                                        required>
+                                </div>
+                                <div class="form-input">
+                                    <label class="form-label" for="tel">Номер телефона</label>
+                                    <input class="input" id="tel" name="tel" type="tel" placeholder="+7 (___) ___-__-__"
+                                        required>
+                                </div>
+                                <div class="form-input">
+                                    <label for="message" class="form-label">Сообщение</label>
+                                    <textarea class="textarea" name="message" id="message" rows="5"
+                                        placeholder="Сообщение"></textarea>
+                                </div>
+                                <div class="form-input">
+                                    <input type="submit" class="btn btn--yellow">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="contacts-page__map">
+                            <iframe
+                                src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae858f2e78258f3a656ff15fdc16b586718e5a4d39ace74d9e42f372f1ab3455d&amp;source=constructor"
+                                width="100%" height="400" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="contacts-info">
+            <div class="container">
+                <div class="contacts-info__wrapper">
+                    <ul class="contacts-info__list">
+                        <li class="contacts-info__item stack">
+                            <span class="contacts-info__icon"><svg xmlns="http://www.w3.org/2000/svg" width="28"
+                                    height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-phone">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                                </svg>
+                            </span>
+                            <div class="contacts-info__descr">
+                                <span class="subtitle">Телефон: </span>
+                                <a class="section-text" href="tel:+79174440506"> 8-(917)-444-05-06</a>
+                                <a class="section-text" href="tel:+79875964008"> 8-(917)-596-40-08</a>
+                            </div>
+                        </li>
+
+                        <li class="contacts-info__item stack">
+                            <span class="contacts-info__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                                    <path
+                                        d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0" />
+                                </svg>
+                            </span>
+                            <div class="contacts-info__descr">
+                                <span class="subtitle">Адрес:</span>
+                                <a class="section-text" href="https://yandex.ru/maps/-/CPBdMM44" target="_blank"
+                                    rel="noopener">
+                                    453252, Республика Башкортостан, г.Салават,
+                                    ул.Богдана Хмельницкого д.62 каб.2
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="contacts-info__item stack">
+                            <span class="contacts-info__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-mail">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+                                    <path d="M3 7l9 6l9 -6" />
+                                </svg>
+                            </span>
+                            <div class="contacts-info__descr">
+                                <span class="subtitle">E-mail:</span>
+                                <a class="section-text" href="mailto:pks0102@mail.ru" target="_blank">
+                                    pks0102@mail.ru
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
     </main>
 
