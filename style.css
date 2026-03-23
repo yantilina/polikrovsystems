@@ -499,7 +499,7 @@ section {
     font-size: 42px;
     font-weight: 800;
     letter-spacing: 3px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: #fff;
     line-height: 1.5;
     text-shadow: 0px 3px 25px rgba(255, 255, 255, 0.1);
@@ -510,7 +510,7 @@ section {
     max-width: 630px;
     font-size: 16px;
     line-height: 1.5;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 1px;
     font-weight: 700;
     color: var(--yellow);
@@ -569,6 +569,7 @@ section {
 
 .advantages-list {
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .advantages-item {
@@ -613,6 +614,59 @@ section {
 .advantages-item:hover .advantages-icon {
     background-color: var(--yellow);
 }
+
+.advantages-mastic-item__header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 20px;
+}
+
+.advantages-mastic-list {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.advantages-mastic-item {
+    border: 1px solid #001F3F;
+    border-radius: 18px;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.advantages-mastic-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.advantages-mastic-icon svg {
+    width: 40px;
+    height: auto;
+}
+
+.advantages-mastic-item .subtitle {
+    font-size: 18px;
+    color: #001F3F;
+}
+
+.advantages-mastic-item .spec-list {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.advantages-mastic-item .spec-list li {
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #333;
+}
+
 
 
 /* developments */
@@ -827,11 +881,18 @@ section {
     gap: 40px;
 }
 
+.service-header__img-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
 .service-header__img {
     width: 100%;
-    aspect-ratio: 2 / 1;
     overflow: hidden;
     border-radius: 16px;
+    display: flex;
+    gap: 12px;
 }
 
 .service-header__img img {
