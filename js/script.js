@@ -16,6 +16,7 @@ burger.addEventListener('click', function () {
 document.addEventListener('click', function (event) {
     if (!nav.contains(event.target) && nav.classList.contains('nav--open')) {
         nav.classList.remove('nav--open')
+        body.classList.remove('body--lock')
     }
 });
 
@@ -23,6 +24,7 @@ document.addEventListener('click', function (event) {
 navLink.forEach((link) => {
     link.addEventListener('click', function () {
         nav.classList.remove('nav--open')
+        body.classList.remove('body--lock')
     })
 });
 

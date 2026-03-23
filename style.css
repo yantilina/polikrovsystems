@@ -528,40 +528,29 @@ section {
 /* about */
 
 .about-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
 }
 
-.about-text {
-    width: 40%;
-    max-width: 520px;
+.about-img__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
 }
 
 .about-img {
-    background-image: url(./img/about-img.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 60%;
-    max-width: 800px;
-    aspect-ratio: 4 / 3;
+    width: 100%;
+    overflow: hidden;
     border-radius: 16px;
-    position: relative;
-    z-index: 0;
+    display: flex;
+    gap: 12px;
 }
 
-.about-img::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
+.about-img img {
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 16px;
+    object-fit: cover;
 }
 
 
@@ -1354,7 +1343,6 @@ input.btn {
         padding-right: 5px;
     }
 
-
     .nav-item {
         display: flex;
     }
@@ -1363,16 +1351,7 @@ input.btn {
         padding: 0 20px;
     }
 
-    .about-text {
-        width: 50%;
-        max-width: 520px;
-    }
-
-    .about-img {
-        width: 50%;
-        aspect-ratio: 3 / 3;
-    }
-
+    .about-wrapper,
     .service-header__wrapper {
         gap: 32px;
         align-items: center;
@@ -1417,6 +1396,12 @@ input.btn {
         gap: 24px;
     }
 
+    .about-img__wrapper,
+    .service-header__img-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .about-img,
     .service-header__img {
         aspect-ratio: 3 / 2;
     }
@@ -1474,18 +1459,9 @@ input.btn {
         padding: 14px;
     }
 
-    .about-wrapper {
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    .about-text,
-    .about-img {
-        width: 100%;
-    }
-
-    .about-img {
-        aspect-ratio: 5 / 3;
+    .about-img,
+    .service-header__img {
+        aspect-ratio: 1 / 1;
     }
 
     .advantages-list {
@@ -1638,6 +1614,15 @@ input.btn {
 
     .nav-item:last-child .nav-link {
         border-radius: 0 0 10px 10px;
+    }
+
+    .about-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .advantages-mastic-list {
+        grid-template-columns: 1fr;
+        gap: 12px;
     }
 
     .service-content a {
@@ -1913,7 +1898,7 @@ input.btn {
     }
 
     .contacts-page__map iframe {
-        height: 50%;
+        height: 330px;
     }
 
     .contacts-info__icon {
