@@ -332,12 +332,12 @@ section {
     flex-direction: row;
     gap: 12px;
     color: var(--yellow);
-    font-size: 30px;
+    font-size: 60px;
     font-weight: 800;
 }
 
 .top-logo img {
-    max-width: 50px;
+    max-width: 230px;
     height: auto;
 }
 
@@ -1323,6 +1323,15 @@ input.btn {
         padding: 0 40px;
     }
 
+    .top-logo {
+        font-size: 45px;
+    }
+
+    .top-logo img {
+        max-width: 180px;
+    }
+
+
     .nav {
         font-size: 16px;
     }
@@ -1420,6 +1429,14 @@ input.btn {
 
     .container {
         padding: 0 24px;
+    }
+
+    .top-logo {
+        font-size: 35px;
+    }
+
+    .top-logo img {
+        max-width: 140px;
     }
 
     .nav-contacts {
